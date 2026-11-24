@@ -1,0 +1,32 @@
+.card {
+display: flex;
+align-items: flex;
+margin: 12px 0;
+overflow: hidden;
+border: 2px solid var(#ed910f);
+border-radius: 16px;
+background: #42385a;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card__foto {
+    width: 300px;
+}
+
+.card__titulo {
+    margin: 2;
+    color: #ed910f;
+    line-height: 1.5; 
+}
+
+.card__titulo {
+    margin: 0;
+    color: #fff7ef;
+    line-height: 1.5; 
+}
+
+.card__boton {
+    color:#ed910f;
+
+
+}

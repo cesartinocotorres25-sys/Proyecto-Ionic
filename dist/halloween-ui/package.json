@@ -1,0 +1,23 @@
+{
+  "peerDependencies": {
+    "@angular/common": "^22.3.0",
+    "@angular/core": "^22.3.0"
+  },
+  "sideEffects": false,
+  "name": "halloween-ui",
+  "type": "module",
+  "main": "./fesm2022/halloween-ui.mjs",
+  "module": "./fesm2022/halloween-ui.mjs",
+  "typings": "./types/halloween-ui.d.ts",
+  "types": "./types/halloween-ui.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/halloween-ui.d.ts",
+      "default": "./fesm2022/halloween-ui.mjs"
+    },
+    "./package.json": {
+      "default": "./package.json"
+    }
+  },
+  "version": "1.0.0"
+}

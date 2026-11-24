@@ -1,0 +1,25 @@
+<article>
+    <div class="card__cuerpo">
+        
+        <h1 class="card__titulo">{{ titulo }}</h1>
+        <h2 class="card__texto">{{ texto }}</h2>
+        @if (foto) {
+            <img class="card__foto" [src]="foto"/>
+        }
+        <br>
+        @if (boton) {
+            <button class="card__boton" type="button" onmousedown="sonido.play()">{{ boton }}</button>
+            <audio src=""></audio>
+            <script>
+                let boton = document.querySelector(".card__boton")
+                let audioEtiqueta = document.querySelector("audio")
+
+                boton.addEventListener("click", () => {
+                audioEtiqueta.setAttribute("src", "assets/mp3/dragon-studio-chimes-of-death-359879.mp3")
+                audioEtiqueta.play()
+                console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+                })
+            </script>
+        }
+    </div>
+</article>
